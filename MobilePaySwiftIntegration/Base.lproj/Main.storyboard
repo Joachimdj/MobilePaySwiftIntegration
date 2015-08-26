@@ -1,25 +1,114 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IuV-u1-gzX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Products-->
+        <scene sceneID="our-fo-M8Q">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Products" id="v6a-aZ-iRg" customClass="ProductListViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="4Hy-vi-KMc"/>
+                        <viewControllerLayoutGuide type="bottom" id="lgR-aF-els"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="47e-Zk-asy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NAr-8F-HgN">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="v6a-aZ-iRg" id="sg8-ES-F1c"/>
+                                    <outlet property="delegate" destination="v6a-aZ-iRg" id="QTe-pM-ofQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NAr-8F-HgN" firstAttribute="top" secondItem="47e-Zk-asy" secondAttribute="top" constant="20" id="0Wp-GF-qXv"/>
+                            <constraint firstItem="NAr-8F-HgN" firstAttribute="leading" secondItem="47e-Zk-asy" secondAttribute="leading" id="75z-tr-kdM"/>
+                            <constraint firstItem="lgR-aF-els" firstAttribute="top" secondItem="NAr-8F-HgN" secondAttribute="bottom" id="9TK-ge-Gb2"/>
+                            <constraint firstAttribute="trailing" secondItem="NAr-8F-HgN" secondAttribute="trailing" id="ixA-3l-zTD"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Fruitshop" image="first" id="R0Z-Kx-QO2"/>
+                    <navigationItem key="navigationItem" title="Fruit Shop" id="v0e-GW-kY0">
+                        <barButtonItem key="rightBarButtonItem" title="About" id="enF-GS-mOg">
+                            <connections>
+                                <segue destination="NX3-HB-Ogh" kind="show" id="o5s-qD-oF0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="NAr-8F-HgN" id="FEL-er-brG"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ekd-Ba-qZV" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="749" y="-321"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ISH-jL-yJv">
+            <objects>
+                <navigationController id="IuV-u1-gzX" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hLP-Uj-VSk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="v6a-aZ-iRg" kind="relationship" relationship="rootViewController" id="5Gu-Iy-pL4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2K2-Uw-TO0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="329" y="-321"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="A7i-Nw-gsL">
+            <objects>
+                <viewController title="About" id="NX3-HB-Ogh" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ra5-IX-2Yi"/>
+                        <viewControllerLayoutGuide type="bottom" id="A8g-2q-Xdr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QAg-3V-9Dg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="MobilePay AppSwitch SDK" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" preferredMaxLayoutWidth="287" translatesAutoresizingMaskIntoConstraints="NO" id="mWI-En-xGa">
+                                <rect key="frame" x="17" y="220" width="287" height="28"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is an example app showing the features of MobilePay AppSwitch SDK" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="287" translatesAutoresizingMaskIntoConstraints="NO" id="tIE-Bn-7HS">
+                                <rect key="frame" x="20" y="253" width="280" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="mWI-En-xGa" secondAttribute="centerY" constant="50" id="1eI-kb-YVI"/>
+                            <constraint firstAttribute="centerY" secondItem="tIE-Bn-7HS" secondAttribute="centerY" id="3Tk-Kh-WeH"/>
+                            <constraint firstAttribute="centerX" secondItem="mWI-En-xGa" secondAttribute="centerX" id="3m1-9Y-Zqc"/>
+                            <constraint firstAttribute="centerX" secondItem="tIE-Bn-7HS" secondAttribute="centerX" id="IkD-ls-633"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="second" id="6H4-Ml-RLU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Vz-mf-zs3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749" y="351"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
 </document>

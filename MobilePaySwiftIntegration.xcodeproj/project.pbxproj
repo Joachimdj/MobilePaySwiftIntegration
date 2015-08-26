@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		885099971B8D56D60075C540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885099961B8D56D60075C540 /* AppDelegate.swift */; };
-		885099991B8D56D60075C540 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885099981B8D56D60075C540 /* ViewController.swift */; };
 		8850999C1B8D56D60075C540 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8850999A1B8D56D60075C540 /* Main.storyboard */; };
 		8850999E1B8D56D60075C540 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8850999D1B8D56D60075C540 /* Images.xcassets */; };
 		885099A11B8D56D60075C540 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8850999F1B8D56D60075C540 /* LaunchScreen.xib */; };
 		885099AD1B8D56D60075C540 /* MobilePaySwiftIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885099AC1B8D56D60075C540 /* MobilePaySwiftIntegrationTests.swift */; };
+		885099C51B8DA03A0075C540 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 885099B81B8DA03A0075C540 /* AppDelegate.m */; };
+		885099C81B8DA03A0075C540 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 885099BC1B8DA03A0075C540 /* main.m */; };
+		885099C91B8DA03A0075C540 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 885099BE1B8DA03A0075C540 /* AboutViewController.m */; };
+		885099CA1B8DA03A0075C540 /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 885099C01B8DA03A0075C540 /* ProductListViewController.m */; };
+		885099CB1B8DA03A0075C540 /* ViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 885099C21B8DA03A0075C540 /* ViewHelper.m */; };
+		885099CC1B8DA03A0075C540 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 885099C41B8DA03A0075C540 /* Product.m */; };
+		885099CE1B8DA21A0075C540 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885099CD1B8DA21A0075C540 /* CoreFoundation.framework */; };
+		885099D01B8DA2230075C540 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885099CF1B8DA2230075C540 /* CoreGraphics.framework */; };
+		885099D21B8DA22B0075C540 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885099D11B8DA22B0075C540 /* UIKit.framework */; };
+		885099D71B8DA4C80075C540 /* libMobilePayManager1.6.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 885099D61B8DA4C80075C540 /* libMobilePayManager1.6.0.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +36,30 @@
 /* Begin PBXFileReference section */
 		885099911B8D56D60075C540 /* MobilePaySwiftIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobilePaySwiftIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		885099951B8D56D60075C540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		885099961B8D56D60075C540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		885099981B8D56D60075C540 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8850999B1B8D56D60075C540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8850999D1B8D56D60075C540 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		885099A01B8D56D60075C540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		885099A61B8D56D60075C540 /* MobilePaySwiftIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobilePaySwiftIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		885099AB1B8D56D60075C540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		885099AC1B8D56D60075C540 /* MobilePaySwiftIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilePaySwiftIntegrationTests.swift; sourceTree = "<group>"; };
+		885099B61B8DA0380075C540 /* MobilePaySwiftIntegration-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobilePaySwiftIntegration-Bridging-Header.h"; sourceTree = "<group>"; };
+		885099B71B8DA03A0075C540 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		885099B81B8DA03A0075C540 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		885099BB1B8DA03A0075C540 /* MobilePayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobilePayManager.h; sourceTree = "<group>"; };
+		885099BC1B8DA03A0075C540 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		885099BD1B8DA03A0075C540 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		885099BE1B8DA03A0075C540 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		885099BF1B8DA03A0075C540 /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListViewController.h; sourceTree = "<group>"; };
+		885099C01B8DA03A0075C540 /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
+		885099C11B8DA03A0075C540 /* ViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewHelper.h; sourceTree = "<group>"; };
+		885099C21B8DA03A0075C540 /* ViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewHelper.m; sourceTree = "<group>"; };
+		885099C31B8DA03A0075C540 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		885099C41B8DA03A0075C540 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		885099CD1B8DA21A0075C540 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		885099CF1B8DA2230075C540 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		885099D11B8DA22B0075C540 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		885099D61B8DA4C80075C540 /* libMobilePayManager1.6.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobilePayManager1.6.0.a; sourceTree = "<group>"; };
+		885099D81B8DA4D30075C540 /* MobilePayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobilePayManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +67,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885099D71B8DA4C80075C540 /* libMobilePayManager1.6.0.a in Frameworks */,
+				885099D21B8DA22B0075C540 /* UIKit.framework in Frameworks */,
+				885099D01B8DA2230075C540 /* CoreGraphics.framework in Frameworks */,
+				885099CE1B8DA21A0075C540 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +87,9 @@
 		885099881B8D56D60075C540 = {
 			isa = PBXGroup;
 			children = (
+				885099D11B8DA22B0075C540 /* UIKit.framework */,
+				885099CF1B8DA2230075C540 /* CoreGraphics.framework */,
+				885099CD1B8DA21A0075C540 /* CoreFoundation.framework */,
 				885099931B8D56D60075C540 /* MobilePaySwiftIntegration */,
 				885099A91B8D56D60075C540 /* MobilePaySwiftIntegrationTests */,
 				885099921B8D56D60075C540 /* Products */,
@@ -77,12 +108,25 @@
 		885099931B8D56D60075C540 /* MobilePaySwiftIntegration */ = {
 			isa = PBXGroup;
 			children = (
-				885099961B8D56D60075C540 /* AppDelegate.swift */,
-				885099981B8D56D60075C540 /* ViewController.swift */,
 				8850999A1B8D56D60075C540 /* Main.storyboard */,
 				8850999D1B8D56D60075C540 /* Images.xcassets */,
 				8850999F1B8D56D60075C540 /* LaunchScreen.xib */,
+				885099B71B8DA03A0075C540 /* AppDelegate.h */,
+				885099D61B8DA4C80075C540 /* libMobilePayManager1.6.0.a */,
+				885099D81B8DA4D30075C540 /* MobilePayManager.h */,
+				885099B81B8DA03A0075C540 /* AppDelegate.m */,
+				885099BB1B8DA03A0075C540 /* MobilePayManager.h */,
+				885099BC1B8DA03A0075C540 /* main.m */,
+				885099BD1B8DA03A0075C540 /* AboutViewController.h */,
+				885099BE1B8DA03A0075C540 /* AboutViewController.m */,
+				885099BF1B8DA03A0075C540 /* ProductListViewController.h */,
+				885099C01B8DA03A0075C540 /* ProductListViewController.m */,
+				885099C11B8DA03A0075C540 /* ViewHelper.h */,
+				885099C21B8DA03A0075C540 /* ViewHelper.m */,
+				885099C31B8DA03A0075C540 /* Product.h */,
+				885099C41B8DA03A0075C540 /* Product.m */,
 				885099941B8D56D60075C540 /* Supporting Files */,
+				885099B61B8DA0380075C540 /* MobilePaySwiftIntegration-Bridging-Header.h */,
 			);
 			path = MobilePaySwiftIntegration;
 			sourceTree = "<group>";
@@ -212,8 +256,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				885099991B8D56D60075C540 /* ViewController.swift in Sources */,
-				885099971B8D56D60075C540 /* AppDelegate.swift in Sources */,
+				885099CA1B8DA03A0075C540 /* ProductListViewController.m in Sources */,
+				885099C91B8DA03A0075C540 /* AboutViewController.m in Sources */,
+				885099CB1B8DA03A0075C540 /* ViewHelper.m in Sources */,
+				885099CC1B8DA03A0075C540 /* Product.m in Sources */,
+				885099C81B8DA03A0075C540 /* main.m in Sources */,
+				885099C51B8DA03A0075C540 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +388,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MobilePaySwiftIntegration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MobilePaySwiftIntegration",
+					"$(PROJECT_DIR)/MobilePaySwiftIntegration/Externals",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MobilePaySwiftIntegration/MobilePaySwiftIntegration-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +406,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MobilePaySwiftIntegration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MobilePaySwiftIntegration",
+					"$(PROJECT_DIR)/MobilePaySwiftIntegration/Externals",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MobilePaySwiftIntegration/MobilePaySwiftIntegration-Bridging-Header.h";
 			};
 			name = Release;
 		};
